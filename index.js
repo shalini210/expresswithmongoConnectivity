@@ -9,7 +9,7 @@ const userSchema = {
     pwd:String
 };
 const userModel = mongoose.model("demo",userSchema);
-const newuser        = new userModel({uname:"admin",pwd:"123"})
+const newuser = new userModel({uname:"admin",pwd:"123"})
 newuser.save()
 .then(()=>console.log("record inseted "))
 .catch(()=>console.log("Record not inserted"))
