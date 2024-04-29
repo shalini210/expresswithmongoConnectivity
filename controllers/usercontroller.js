@@ -9,6 +9,7 @@ exports.insertUser = (req,res)=>{
             );            
     newuser.save()
 .then(()=>{console.log("record inseted ");
+console.log(req.body)
 res.send("user inserted ");
         })
 .catch(()=>
